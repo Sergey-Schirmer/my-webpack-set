@@ -1,7 +1,7 @@
 import './menu.scss';
 
 export default function (array, className) {
-    var menu = document.createElement("ul");
+    let menu = document.createElement("ul");
     menu.className = className;
     var listItems = '';
     array.forEach(function(item) {
