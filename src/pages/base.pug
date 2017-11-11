@@ -6,4 +6,15 @@ html
         title
             block title
     body
-        block main
+      #wrapper
+        #page-overlay
+        ul#mob-menu
+          each val in ['benefits','claims', 'appliance repair', 'faqs']
+            li.header-nav__item.dropdown-menu
+              a(href='#')= val
+        //header
+        include header
+        main
+          block main
+        //footer
+        include footer
